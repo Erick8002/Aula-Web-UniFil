@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+
+<body bgcolor="cdd1d8">
+    <header>
+        <nav>
+            <table align="center" cellspacing="15px" cellpadding="10px">
+                <tr>
+                    <td>
+                        <a href="#Cadastro">
+                            <font face="Arial" size="4" color="black">Cadastro</font>
+                        </a>
+                    </td>
+                    <td>&nbsp; | &nbsp;</td>
+                    <td>
+                        <a href="#Lista">
+                            <font face="Arial" size="4" color="black">Lista</font>
+                        </a>
+                    </td>
+                    <td>&nbsp; | &nbsp;</td>
+                    <td>
+                        <a href="#Contatos">
+                            <font face="Arial" size="4" color="black">Contatos</font>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <hr size="2" color="black">
+
+    <main>
+        <h1 align="center">
+            <font face="Georgia" size="7">Cadastro de Usuário</font>
+        </h1>
+
+        <hr size="2" color="gray" width="60%"><br>
+
+        <section id="#Cadastro">
+            <h2 align="center">
+                <font face="Gerogia" size="6">Formulário</font>
+            </h2>
+
+            <form align="center" action="#" method="post">
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" placeholder="Digite seu nome"><br><br>
+
+                <label for="e-mail">E-mail</label><br>
+                <input type="email" name="e-mail" placeholder="Digite seu E-mail"><br><br>
+
+                <label for="senha">Senha</label><br>
+                <input type="password" name="senha" placeholder="Digite sua senha"><br><br>
+
+                <p>Sexo</p>
+                <input type="radio" id="masculino" name="sexo" value="masc">
+                <label for="sexo">Masculino</label>
+
+                <input type="radio" id="feminino" name="sexo" value="fem">
+                <label for="sexo">Feminino</label>
+
+                <input type="radio" id="outro" name="sexo" value="outro">
+                <label for="outro">Outro</label><br><br>
+
+                <p>Interesses</p>
+                <input type="checkbox" id="tec" name="interesses" value="tec">
+                <label for="interesses">Tecnologia</label><br>
+
+                <input type="checkbox" id="esporte" name="interesses" value="esportes">
+                <label for="interesses">Esportes</label><br>
+
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="interesses">Tecnologia</label><br><br>
+
+                <label for="data">Data</label><br>
+                <input type="date" name="data"><br><br>
+
+                <p>Cor</p>
+                <input type="radio" name="cor" id="branco" value="branco">
+                <label for="cor">Branco</label><br>
+
+                <input type="radio" name="cor" id="preto" value="preto">
+                <label for="cor">Preto</label><br>
+
+                <input type="radio" name="cor" id="pardo" value="pardo">
+                <label for="cor">Pardo</label><br>
+
+                <input type="radio" name="cor" id="amarelo" value="amarelo">
+                <label for="cor">Amarelo</label><br>
+            </form>
+        </section>
+
+        <hr size="2" color="gray"><br>
+
+        <section id="Lista">
+            <h2 align="center">
+                <font face="Gerogia" size="6">Lista de horário</font>
+            </h2>
+
+            <table border="1" align="center">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00</td>
+                        <td colspan="2">Desenvolvimento Web</td>
+                        <td>Matemática</td>
+                    </tr>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Design</td>
+                        <td>História</td>
+                        <td>Inglês</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td rowspan="2">INTERVALO</td>
+                        <td>Projeto</td>
+                        <td>Geografia</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>Física</td>
+                        <td>Artes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr size="2" color="gray">
+
+        <section id="Extras" align="center">
+            <h2 align="center">
+                <font face="Gerogia" size="6">Imagem clicável</font>
+            </h2>
+            <font face="Georgia" size="4">
+                Imagem do YouTube
+            </font><br>
+            <a href="https://www.youtube.com" target="_blank">
+                <img align="" src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="imagem do youtube" width="200px">
+            </a>
+
+            <h2 align="center">
+                <font face="Gerogia" size="6">Iframe</font>
+            </h2>
+            <font face="Georgia" size="4">
+                Site do Maps 
+            </font><br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.9895467362194!2d-51.17338892489778!3d-23.316138052628443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb4357c6b916bb%3A0x4ae76bcb7fd81801!2sUniFil%20Campus%20Sede!5e0!3m2!1spt-BR!2sbr!4v1778525068149!5m2!1spt-BR!2sbr" width="600" height="450"></iframe>
+        </section>
+    </main>
+</body>
+
+</html>
