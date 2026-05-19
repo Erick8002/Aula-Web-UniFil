@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+
+.caixa {
+    display: inline-block;
+    width: 28%;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid gray;
+    box-shadow: 3px 3px 10px gray;
+    vertical-align: top;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
