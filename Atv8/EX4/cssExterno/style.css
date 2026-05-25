@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.card {
+    background: #ffffff;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: #00122e;
+    margin: 25px 0 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
