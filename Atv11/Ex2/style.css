@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #e2e8f0;
+    padding: 20px;
+}
+
+.painel-admin {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 80px 1fr 60px;
+    grid-template-areas: 
+        "header header"
+        "sidebar principal"
+        "footer footer";
+    gap: 15px;
+}
+
+.area-painel {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.area-header {
+    grid-area: header;
+    justify-content: space-between;
+}
+
+.area-sidebar {
+    grid-area: sidebar;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.area-principal {
+    grid-area: principal;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.area-footer {
+    grid-area: footer;
+    justify-content: center;
+}
+
+.area-header:hover {
+    background-color: #121212;
+    border-color: #dfb15b;
+}
+
+.area-sidebar:hover {
+    background: linear-gradient(180deg, #dfb15b, #9a7432);
+    border-color: #f3e796;
+}
+.area-sidebar:hover a {
+    color: #000000;
+}
+
+.area-principal:hover {
+    background-color: #121212;
+    border-color: #dfb15b;
+}
+
+.area-footer:hover {
+    background-color: #1a1a1a;
+    color: #dfb15b;
+}
+
+header h1 {
+    color: #dfb15b;
+    font-size: 22px;
+}
+
+.area-sidebar ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.area-sidebar li {
+    margin-bottom: 15px;
+}
+
+.area-sidebar a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 16px;
+}
