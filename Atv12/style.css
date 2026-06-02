@@ -1,0 +1,152 @@
+:root {
+    --bg-principal: #0b0f19;
+    --bg-header: #0b0f19;
+    --bg-card: #131a26;
+    --cor-letra: #94a3b8;
+    --cor-neon: #00f2fe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-principal);
+    padding-top: 80px;
+}
+
+header {
+    color: var(--bg-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    border-bottom: 1px solid #1e293b;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+header nav a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: var(--cor-letra);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--cor-neon);
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+img {
+    height: 100px;
+}
+
+.logo {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--cor-neon);
+}
+
+.botao {
+    background: transparent;
+    border: 1px solid var(--cor-neon);
+    color: var(--cor-neon);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+.botao:hover {
+    background: var(--cor-neon);
+    color: #0b0f19;
+}
+
+.card-conteiner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px;
+}
+
+@media (min-width: 768px) {
+    .card-conteiner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-conteiner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--bg-card);
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    min-height: 480px;
+    justify-content: flex-start;
+    transition: all 0.3s ease;
+}
+
+.card h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card p {
+    color: var(--cor-letra);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-card {
+    background-color: transparent;
+    color: var(--cor-neon);
+    border: 1px solid var(--cor-neon);
+    padding: 10px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.btn-card:hover{
+    background-color: var(--cor-neon);
+    color: var(--bg-card);
+}
